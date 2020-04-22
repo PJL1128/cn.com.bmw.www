@@ -142,25 +142,94 @@ $('.brown').on('mouseleave', function () {
 })
 
 
-//  tab插件
-// $(function () {
-//     $('.ah-tab-wrapper').horizontalmenu({
-//         itemClick: function (item) {
-//             $('.ah-tab-content-wrapper .ah-tab-content').removeAttr('data-ah-tab-active');
-//             $('.ah-tab-content-wrapper .ah-tab-content:eq(' + $(item).index() + ')').attr('data-ah-tab-active', 'true');
-//             return false; //if this finction return true then will be executed http request
-//         }
-//     });
-// });
 
+
+//按车系查看  鼠标移入
+$('.ah-tab-item-1').on('click', function () {
+    // $(this).addClass('border-blue').siblings().removeClass('border-blue')
+    $(this).attr('class', 'border-blue').siblings().removeAttr('class')
+
+    if ($(this).eq(1)) {
+        $('.ah-tab-3').css({
+            'display': 'block'
+        })
+        // $('.ah-tab-2').css({
+        //     'display': 'none'
+        // })
+    } else {
+        $('.ah-tab-3').css({
+            'display': 'none'
+        })
+        $('.ah-tab-2').css({
+            'display': 'block'
+        })
+    }
+})
+
+$('.ah-tab-2 .ah-tab-item2').on('click', function () {
+    $(this).eq(1).attr('class', 'border-blue')
+    $(this).attr('class', 'border-blue').siblings().removeAttr('class')
+    $('.ah-tab-content-1').eq($(this).index()).show().siblings('.ah-tab-content-1').hide()
+
+})
+
+// $('.ah-tab-item3').on('click', function () {
+//     alert('123')
+//     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
+//     $('.ah-tab-content-2').siblings('div').eq($(this).index()).show().siblings('div').hide()
+
+// })
+
+
+
+
+//活动悦享的切换功能
 $('.ah-tab-item').click(function () {
+    $(this).addClass('border-blue').siblings().removeClass('border-blue')
+    $(this).eq(0).addClass('border-blue')
+    //页面滑动
     $('.ah-tab-content-wrapper').animate({
         left: -$(this).index() * 1200
     }, 500)
 })
 
 
+$('.ah-tab-content .understand').on('.click', function () {
+    $(this).css({
+        'color': 'blue',
+    })
+})
 
 
-//按车系查看  鼠标移入
+//箭头 了解情况
+$('.five-part .understand').on('mouseenter', function () {
+    $(this).css({
+        'color': 'blue',
+    })
+})
+$('.five-part .understand').on('mouseleave', function () {
+    $(this).css({
+        'color': '#333',
+    })
+})
 
+$('.five-part .understand img').on('mouseleave', function () {
+    $(this).css({
+        'src': './images/five-part-arrow.png',
+    })
+})
+
+
+
+
+//第八部分  移入 背景颜色变暗
+$('.eight-part-one').on('mouseenter', function () {
+    $(this).css({
+        'backgroundColor': '#e6e6e6'
+    })
+})
+$('.eight-part-one').on('mouseleave', function () {
+    $(this).css({
+        'backgroundColor': '#f2f2f2'
+    })
+})
