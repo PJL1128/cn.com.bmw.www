@@ -154,9 +154,9 @@ $('.brown').on('mouseleave', function () {
 // });
 
 $('.ah-tab-item').click(function () {
-    $('.ah-tab-content').animate({
-        left: $(this).index() * 1190
-    })
+    $('.ah-tab-content-wrapper').animate({
+        left: -$(this).index() * 1200
+    }, 500)
 })
 
 

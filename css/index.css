@@ -100,8 +100,8 @@
 /* 轮播图 */
   .slider {
     height: 765px;
-    width: 1790px;
-    margin-left: 112px;
+    margin-left: 114px;
+    /* margin-left: 112px; */
     position: relative;
   }
 
@@ -298,3 +298,401 @@
 /* .ah-tab-content-wrapper-1{
   margin-left: 335px;
 } */
+
+
+.ah-tab-3{
+   width: 1200px;
+    padding-left: 19px;
+    border-bottom: 1px solid #ccc;
+    margin: 25px 0;
+    padding-bottom: 20px; 
+    display: none;
+}
+
+.ah-tab-3 a{
+   font-size: 20px;
+   /* padding: 0 22px;
+    padding-bottom: 14px; */
+    /* height: 75px; */
+    font-weight: 100;
+    color: #bbbbbb;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 115px;
+    overflow: hidden;
+    font-family: "bmwTypeWebBoldAll","Arial","Helvetica",sans-serif;
+}
+.ab-tab-content-ck{
+  display: block;
+   width: 1200px;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+}
+
+
+
+
+/* 活动 */
+.ah-tab-wrapper {
+  /* position: relative; */
+  margin-top: 180px;
+  margin-left: 335px;
+  /* width: 7140px; */
+  width: 1200px;
+  height: 480px;
+  position: absolute;
+  
+}
+
+.ah-tab a{
+  width: 197px;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.activity-arrow-right,
+.activity-arrow-left {
+  font-family: "SimSun", "宋体";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 37px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.activity-arrow-left i,
+.activity-arrow-right i{
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.activity-arrow-right{
+  right: -30px;
+  top: 104px;
+}
+
+.activity-arrow-left{
+  left: -35px;
+    top: 101px;
+}
+
+.ah-tab-wrapper h1{
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 0px;
+}
+
+.ah-tab {
+  border-bottom: 1px solid #ebebeb;
+  margin-left: 0px;
+  width: 1199px;
+  letter-spacing: -0.3em;
+}
+
+.ah-tab-item {
+  color: #8b8b8b;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: normal;
+  transition: all .3s;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ah-tab>.ah-tab-item {
+  border-bottom: 5px solid transparent;
+  padding-top: 38px;
+  padding-bottom: 5px;
+}
+
+.ah-tab>.ah-tab-item:hover {
+  border-bottom: 5px solid #1c69d4;
+}
+
+.ah-tab>.ah-tab-item[data-ah-tab-active="true"] {
+  border-bottom-color: #1c69d4;
+}
+
+.ah-tab-content-wrapper {
+  margin: 30px 0;
+  height: 330px;
+  /* width: 7200px; */
+  width: 9000px;
+  /* position: relative; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ah-tab-content {
+  /* display: none; */
+  overflow: hidden;
+  width: 1191px;
+  float: left;
+  height: 330px;
+  margin-right: 10px;
+  
+}
+
+.ah-tab-content img{
+  float: left;
+  margin-right: 35px;
+}
+
+.ah-tab-content p{
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.ah-tab-content  i{
+  font-size: 23px;
+  color: #686868;
+  font-weight: 500;
+  float: left;
+  margin-top: -6px;
+  margin-left: -8px;
+}
+
+.ah-tab-content span{
+  font-size: 14px;
+  margin-left: -2px;
+  float: left;
+  margin-top: -1px;
+}
+
+.ah-tab-content .understand{
+  width: 78px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.ah-tab-content .understand:hover{
+  color: #0653b6;
+}
+
+.ah-tab-content[data-ah-tab-active="true"] {
+  display: block;
+  margin-left: 5px;
+}
+
+.first{
+  width: 1200px;
+  height: 480px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+
+
+
+
+
+
+/* 第五部分 */
+.five-part{
+  margin-top: 185px;
+    margin-left: 341px;
+    overflow: hidden;
+}
+
+.five-part img{
+  width: 100%;
+}
+
+.five-part-one,
+.five-part-two{
+  /* float: left; */
+    width: 585px;
+    height: 420px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.five-part-one {
+  margin-right: 18px;
+}
+
+.five-part-one p,
+.five-part-two p{
+  font-size: 20px;
+    margin-top: 10px;
+}
+
+.five-part-one s,
+.five-part-two s{
+  font-size: 14px;
+    margin: 7px 0px;
+    display: block;
+}
+
+
+
+/* 第六部分 */
+.six-part{
+  margin-top: 18px;
+    margin-left: 341px;
+    overflow: hidden;
+    width: 1390px;
+}
+
+.six-part img{
+  width: 93%;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.six-part-one,
+.six-part-two{
+  float: left;
+    width: 313px;
+    height: 297px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.six-part-one p,
+.six-part-two p{
+  font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.six-part-one s,
+.six-part-two s{
+  font-size: 14px;
+    margin: 7px 0px;
+    display: block;
+    margin-left: 10px;
+}
+
+.ah-tab-content .understand{
+  width: 78px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 7px;
+}
+
+.six-part div:last-child{
+  margin-top: 2px;
+}
+
+
+
+/* 第七部分 */
+.seven-part{
+  margin-top: -20px;
+  margin-left: 341px;
+  overflow: hidden;
+}
+
+.seven-part img{
+  width: 100%;
+}
+
+.seven-part-one,
+.seven-part-two{
+  width: 585px;
+  height: 420px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+.seven-part-one {
+  margin-right: 18px;
+}
+
+.seven-part-one p,
+.seven-part-two p{
+  font-size: 20px;
+    margin-top: 10px;
+}
+
+.seven-part-one s,
+.seven-part-two s{
+  font-size: 14px;
+    margin: 7px 0px;
+    display: block;
+}
+
+
+
+
+/* 第八部分 */
+.eight-part{
+  margin-left: 340px;
+  
+}
+.eight-part-one{
+  width: 243px;
+  height: 155px;
+  background-color: #f2f2f2;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.eight-part-one .iconfont{
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  right: 45%;
+}
+
+.eight-part-one p{
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-top: 113px;
+    margin-left: 73px;
+}
+
+.eight-part-one p:first-child,
+.eight-part-one p:last-child{
+  margin-left: 87px;
+}
+
+
+
+
+/* 底部 */
+.footer{
+  width: 100%;
+  height: 500px;
+  background-color: #e6e6e6;
+  overflow: hidden;
+  padding-left: 340px;
+  margin-top: 100px;
+}
+
+.footer dl{
+  float: left;
+  margin-right: 150px;
+}
+
+.footer dt{
+  font-size: 18px;
+    color: #333;
+    margin-bottom: 28px;
+}
+
+.footer dd{
+  font-size: 14px;
+    line-height: 28px;
+    color: #999999;
+}
