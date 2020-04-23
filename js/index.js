@@ -107,15 +107,15 @@ $('.top-nav i').mouseleave(function () {
 
 
 //移动滚动条  顶部导航变成固定定位
-// $(document).on('scroll', function () {
-//     let top = $('.top-nav').offset().top
-//     let scrollTop = $(document).scrollTop()
-//     if (scrollTop >= top) {
-//         $('.top-nav').addClass('opacity')
-//     } else {
-//         $('.top-nav').removeClass('opacity')
-//     }
-// })
+$(document).on('scroll', function () {
+    // let top = $('.top-nav').offset().top
+    let scrollTop = $(document).scrollTop()
+    console.log(scrollTop)
+    if (scrollTop >= 100) {
+        $('.BMW').css({ 'src': `./images/top-nav_2.png` })
+        $('.top-nav a').css({ 'color': '#ccc' })
+    }
+})
 
 
 //移入了解详情 即刻前往 预约试驾 亮度变暗
@@ -153,9 +153,9 @@ $('.ah-tab-item-1').on('click', function () {
         $('.ah-tab-3').css({
             'display': 'block'
         })
-        // $('.ah-tab-2').css({
-        //     'display': 'none'
-        // })
+        $('.ah-tab-2').css({
+            'display': 'none'
+        })
     } else {
         $('.ah-tab-3').css({
             'display': 'none'
@@ -185,8 +185,18 @@ $('.ah-tab-2 .ah-tab-item2').on('click', function () {
 
 //活动悦享的切换功能
 $('.ah-tab-item').click(function () {
-    $(this).addClass('border-blue').siblings().removeClass('border-blue')
-    $(this).eq(0).addClass('border-blue')
+    // alert('123')
+    $(this).addClass('border-blue')
+    //页面滑动
+    $('.ah-tab-content-wrapper').animate({
+        left: -$(this).index() * 1200
+    }, 500)
+})
+//点击活动悦享的左右箭头 页面滑动
+$('.activity-arrow-left i').click(function () {
+    // alert('123')
+    // $('.ah-tab-item').addClass('border-blue').siblings().removeClass('border-blue')
+    // $('.ah-tab-item').eq(0).addClass('border-blue')
     //页面滑动
     $('.ah-tab-content-wrapper').animate({
         left: -$(this).index() * 1200
@@ -194,17 +204,17 @@ $('.ah-tab-item').click(function () {
 })
 
 
-$('.ah-tab-content .understand').on('.click', function () {
-    $(this).css({
-        'color': 'blue',
-    })
-})
+// $('.ah-tab-content .understand').on('.click', function () {
+//     $(this).css({
+//         'color': '#0653b6',
+//     })
+// })
 
 
 //箭头 了解情况
 $('.five-part .understand').on('mouseenter', function () {
     $(this).css({
-        'color': 'blue',
+        'color': '#0653b6',
     })
 })
 $('.five-part .understand').on('mouseleave', function () {
@@ -213,9 +223,14 @@ $('.five-part .understand').on('mouseleave', function () {
     })
 })
 
-$('.five-part .understand img').on('mouseleave', function () {
+$('.six-part .understand').on('mouseenter', function () {
     $(this).css({
-        'src': './images/five-part-arrow.png',
+        'color': '#0653b6',
+    })
+})
+$('.six-part .understand').on('mouseleave', function () {
+    $(this).css({
+        'color': '#333',
     })
 })
 
