@@ -107,15 +107,15 @@ $('.top-nav i').mouseleave(function () {
 
 
 //移动滚动条  顶部导航变成固定定位
-$(document).on('scroll', function () {
-    // let top = $('.top-nav').offset().top
-    let scrollTop = $(document).scrollTop()
-    console.log(scrollTop)
-    if (scrollTop >= 100) {
-        $('.BMW').css({ 'src': `./images/top-nav_2.png` })
-        $('.top-nav a').css({ 'color': '#ccc' })
-    }
-})
+// $(document).on('scroll', function () {
+//     // let top = $('.top-nav').offset().top
+//     let scrollTop = $(document).scrollTop()
+//     console.log(scrollTop)
+//     if (scrollTop >= 100) {
+//         $('.BMW').css({ 'src': `./images/top-nav_2.png` })
+//         $('.top-nav a').css({ 'color': '#ccc' })
+//     }
+// })
 
 
 //移入了解详情 即刻前往 预约试驾 亮度变暗
@@ -145,33 +145,56 @@ $('.brown').on('mouseleave', function () {
 
 
 //按车系查看  鼠标移入
-$('.ah-tab-item-1').on('click', function () {
+$('.car-check-top-content').on('click', function () {
+    // alert('123')
     // $(this).addClass('border-blue').siblings().removeClass('border-blue')
     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
-
-    if ($(this).eq(1)) {
-        $('.ah-tab-3').css({
-            'display': 'block'
-        })
-        $('.ah-tab-2').css({
-            'display': 'none'
-        })
+    if ($(this).index() == 1) {
+        $('.car-check-top-1').hide()
+        $('.car-check-top-2').show()
     } else {
-        $('.ah-tab-3').css({
-            'display': 'none'
-        })
-        $('.ah-tab-2').css({
-            'display': 'block'
-        })
+        $('.car-check-top-1').show()
+        $('.car-check-top-2').hide()
     }
+
+    // 按车系查看  点击某个车系  给车系加类名
+    $('.car-check-top-1 a').on('click', function () {
+        $(this).addClass('bottom-blue').css({
+            'fontSize': '35px',
+            'color': '#333',
+        }).siblings().css({
+            'fontSize': '20px',
+            'color': '#ccc',
+        }).removeClass('bottom-blue')
+        // console.log($(this).index())
+        $('.car-check-top-1-content').hide()
+        $('.car-check-top-1-content-1').hide()
+        let aindex = $(this).index()
+        $('.car-check-top-1-content').eq(aindex).show()
+    })
+
+
+
+    // 按类别查看  点击某个车系  给车系加类名
+    $('.car-check-top-2 a').on('click', function () {
+        $(this).addClass('bottom-blue').css({
+            'fontSize': '35px',
+            'color': '#333'
+        }).siblings().css({
+            'fontSize': '20px',
+            'color': '#ccc',
+        }).removeClass('bottom-blue')
+    })
 })
 
-$('.ah-tab-2 .ah-tab-item2').on('click', function () {
-    $(this).eq(1).attr('class', 'border-blue')
-    $(this).attr('class', 'border-blue').siblings().removeAttr('class')
-    $('.ah-tab-content-1').eq($(this).index()).show().siblings('.ah-tab-content-1').hide()
+// $('.car-check-top-1 a').on('click', function () {
+//     $(this).index().siblings('.car-check-top-1-content').index().show()
+// $('.ah-tab-2 .ah-tab-item2').on('click', function () {
+//     $(this).eq(1).attr('class', 'border-blue')
+//     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
+//     $('.ah-tab-content-1').eq($(this).index()).show().siblings('.ah-tab-content-1').hide()
 
-})
+// })
 
 // $('.ah-tab-item3').on('click', function () {
 //     alert('123')
