@@ -341,6 +341,10 @@
   width: 100%;
 }
 
+.car-check-top-1-content-1 img{
+  width: 100%;
+}
+
 .one{
   position: relative;
 }
@@ -369,7 +373,7 @@
   float: left;
     width: 285px;
     position: relative;
-    height: 500px;
+    height: 280px;
 }
 
 .car-check-top-1-content-two .bg{
@@ -471,7 +475,7 @@
   overflow: hidden;
   margin-top: 200px;
   /* position: relative; */
-  margin-bottom: 300px;
+  /* margin-bottom: 560px; */
   height: 460px;
 }
 
@@ -576,7 +580,7 @@
 
 
 /* 活动 */
-.ah-tab-wrapper {
+.activity-title {
   margin-top: 180px;
   margin-left: 354px;
   width: 1200px;
@@ -623,7 +627,7 @@
     top: 101px;
 }
 
-.ah-tab-wrapper h1{
+.activity-title h1{
   font-size: 26px;
   font-weight: normal;
   margin-left: 0px;
@@ -717,9 +721,11 @@
 
 .first{
   width: 1200px;
-  height: 480px;
-  /* overflow: hidden; */
-  position: relative;
+    height: 480px;
+    /* overflow: hidden; */
+    position: relative;
+    /* margin-top: 300px; */
+    /* margin-left: 360px; */
 }
 
 

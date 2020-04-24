@@ -110,12 +110,28 @@ $('.top-nav i').mouseleave(function () {
 // $(document).on('scroll', function () {
 //     // let top = $('.top-nav').offset().top
 //     let scrollTop = $(document).scrollTop()
-//     console.log(scrollTop)
+//     var opacity = null;
+//     // console.log(scrollTop)
 //     if (scrollTop >= 100) {
-//         $('.BMW').css({ 'src': `./images/top-nav_2.png` })
-//         $('.top-nav a').css({ 'color': '#ccc' })
+//         $('.top-nav').css({
+//             'color': '#ccc',
+//             "opacity": 1 - scroll_top
+//         })
 //     }
 // })
+
+$(document).ready(function () {
+    var scroll_top = null;
+    var opacity = null;
+    $(window).scroll(function () {
+        scroll_top = $(window).scrollTop() / 1000;
+        if (scroll_top <= 0.5) {
+            $('.top-nav').css({
+                'opacity': '1',
+            })
+        }
+    })
+})
 
 
 //移入了解详情 即刻前往 预约试驾 亮度变暗
@@ -146,8 +162,7 @@ $('.brown').on('mouseleave', function () {
 
 //按车系查看  鼠标移入
 $('.car-check-top-content').on('click', function () {
-    // alert('123')
-    // $(this).addClass('border-blue').siblings().removeClass('border-blue')
+
     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
     if ($(this).index() == 1) {
         $('.car-check-top-1').hide()
@@ -156,6 +171,7 @@ $('.car-check-top-content').on('click', function () {
         $('.car-check-top-1').show()
         $('.car-check-top-2').hide()
     }
+
 
     // 按车系查看  点击某个车系  给车系加类名
     $('.car-check-top-1 a').on('click', function () {
@@ -168,9 +184,10 @@ $('.car-check-top-content').on('click', function () {
         }).removeClass('bottom-blue')
         // console.log($(this).index())
         $('.car-check-top-1-content').hide()
-        $('.car-check-top-1-content-1').hide()
+        // $('.car-check-top-1-content-1').hide()
         let aindex = $(this).index()
         $('.car-check-top-1-content').eq(aindex).show()
+        // $('.car-check-top-1-content').eq(1).show()
     })
 
 
@@ -184,24 +201,13 @@ $('.car-check-top-content').on('click', function () {
             'fontSize': '20px',
             'color': '#ccc',
         }).removeClass('bottom-blue')
+        // $('.car-check-top-1-content').hide()
+        $('.car-check-top-1-content-1').hide()
+        let bindex = $(this).index()
+        $('.car-check-top-1-content-1').eq(bindex).show()
     })
 })
 
-// $('.car-check-top-1 a').on('click', function () {
-//     $(this).index().siblings('.car-check-top-1-content').index().show()
-// $('.ah-tab-2 .ah-tab-item2').on('click', function () {
-//     $(this).eq(1).attr('class', 'border-blue')
-//     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
-//     $('.ah-tab-content-1').eq($(this).index()).show().siblings('.ah-tab-content-1').hide()
-
-// })
-
-// $('.ah-tab-item3').on('click', function () {
-//     alert('123')
-//     $(this).attr('class', 'border-blue').siblings().removeAttr('class')
-//     $('.ah-tab-content-2').siblings('div').eq($(this).index()).show().siblings('div').hide()
-
-// })
 
 
 
@@ -209,7 +215,7 @@ $('.car-check-top-content').on('click', function () {
 //活动悦享的切换功能
 $('.ah-tab-item').click(function () {
     // alert('123')
-    $(this).addClass('border-blue')
+    $(this).addClass('bottom-blue').siblings().removeClass('bottom-blue')
     //页面滑动
     $('.ah-tab-content-wrapper').animate({
         left: -$(this).index() * 1200
@@ -226,12 +232,6 @@ $('.activity-arrow-left i').click(function () {
     }, 500)
 })
 
-
-// $('.ah-tab-content .understand').on('.click', function () {
-//     $(this).css({
-//         'color': '#0653b6',
-//     })
-// })
 
 
 //箭头 了解情况
