@@ -5,11 +5,11 @@
 // 定义变量
 var $num = 0
 //遍历图片 
-for (let i = 0; i < $('ul>li').children().length; i++) {
+for (let i = 0; i < $('.slider ul li').children().length; i++) {
     //向ol中添加li
     $('ol').append($(' <li></li>'))
     //给第一个li添加类名 current
-    $('ol li').eq(0).addClass('current')
+    $('.slider ol li').eq(0).addClass('current')
 }
 
 // 鼠标经过哪个小圆点上面，这个小圆点的背景色就是蓝色(current类名已经提供)，同时大图也在跟着切换

@@ -150,9 +150,14 @@
   .all-kinds-of-servise .content{
       width: 200px;
       height: 125px;
-      border: 1px solid #ccc;
+      /* border: 1px solid #ccc; */
       float: left;
       box-sizing: border-box;
+      transition: all 0.5;
+  }
+
+  .all-kinds-of-servise .content:hover{
+      transform: scale(1.2);
   }
 
   .all-kinds-of-servise a{
@@ -169,10 +174,16 @@
       margin-bottom: 20px;
   }
 
+  .ad img{
+    width: 1200px;
+  }
+
 
   /* BMW车型 */
   .motorcycle-type{
-      height: 375px;
+    height: 375px;
+    width: 1200px;
+    margin-left: 353px;
   }
 
   .motorcycle-type li{
@@ -182,20 +193,321 @@
 
   .motorcycle-type li:first-child{
       margin-right: 18px;
+      width: 740px;
   }
 
   .motorcycle-type li:last-child{
     margin-top: 18px;
+    width: 438px;
+}
+
+.motorcycle-type li:nth-child(2){
+    width: 438px;
 }
 
 
 /* 热销排行榜 */
 .hot{
-    margin-top: 10px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    margin-left: 353px;
+    /* z-index: -1; */
+    margin-bottom: 41px;
+}
+
+.hot-ad{
+    width: 1200px;
+    
 }
 
 .hot h2{
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 25px;
+    position: relative;
 }
+
+.hot ul{
+    width: calc(232px*9);
+    overflow: hidden;
+    margin-top: 25px;
+    position: absolute;
+    height: 333px;
+}
+
+.hot li{
+    float: left;
+    width: 232px;
+    height: 310px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 10px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.hot li:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 0px 8px 5px #ccc;
+}
+
+.hot li img{
+    width:100%;
+}
+
+.look{
+    width: 1200px;
+    height: 335px;
+    
+}
+
+.look p{
+    font-size: 18px;
+    color: #000;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+.look span{
+    font-size: 20px;
+    color: #1c69d4;
+    margin-top: 10px;
+    display: block;
+    padding-left: 10px;
+}
+
+.look .top{
+    background-image: url(../images/hot-tpo.png);
+    width: 56px;
+    height: 57px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    background-size: 56px;
+}
+
+.look .top1{
+    background-image: url(../images/hot-tpo.png);
+    width: 69px;
+    height: 90px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    background-size: 56px;
+}
+
+.look .top2{
+    background-image: url(../images/hot-tpo.png);
+    width: 69px;
+    height: 90px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    background-size: 56px;
+}
+
+.look .top3{
+    background-image: url(../images/hot-top_2.png);
+    width: 69px;
+    height: 90px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    background-size: 45px;
+}
+
+.look .top4{
+    background-image: url(../images/hot-top_2.png);
+    width: 69px;
+    height: 90px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    background-size: 45px;
+}
+
+.look .one{
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    z-index: 10;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.look .two{
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    z-index: 10;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.look .three{
+        position: absolute;
+        top: 22px;
+        left: 26px;
+        z-index: 10;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 100;
+}
+
+.look .four{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    z-index: 10;
+    color: #1c69d3;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.look .five{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    z-index: 10;
+    color: #1c69d3;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+
+
+/* 热销车型 */
+.hot-car-title{
+    overflow: hidden;
+}
+
+.hot-car-title h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    position: relative;
+    float: left;
+}
+
+.hot-car-title span{
+    float: right;
+    font-size: 14px;
+}
+
+.hot-car-slider{
+    height: 500px;
+    background-color: pink;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* 热销车型 */
+.good-produce{
+    overflow: hidden;
+}
+
+.good-produce-title-top{
+    height: 80px;
+}
+
+.good-produce-title{
+    float: left;
+    /* margin-right: 30px; */
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+.good-produce-title h2{
+    font-size: 24px;
+    color: #181c2f;
+    font-weight: 600;
+    /* margin-bottom: 8px; */
+    line-height: 45px;
+}
+
+.good-produce-title span{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.good-produce-content ul{
+    overflow: hidden;
+}
+
+.good-produce-content li{
+    width: 293px;
+    height: 394px;
+    float: left;
+}
+
+.good-produce-content img{
+    width: 100%;
+}
+
+
+
+
+/* 底部 */
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #8e8e8e;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer p{
+    float: left;
+    line-height: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer i{
+    position: absolute;
+    top: 29px;
+    left: 328px;
+    background-image: url(../images/last_1.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 21px;
+    padding-left: 12px;
+    display: block;
+  }
+
+  .footer-right span{
+      margin-left: 38px;
+      float: left;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 37px;
+      border-bottom: 1px solid #fff;
+  }
+
+  .footer-right span:first-child{
+      margin-left: 372px;
+  }
+
+  .footer .BMW{
+      border: none;
+  }
