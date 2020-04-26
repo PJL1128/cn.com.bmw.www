@@ -32,10 +32,44 @@ $('.slider ol li').on('click', function () {
 
 
 //默认动画,图片轮播,每个1秒切换
-function switchImgs() {
-    $num++;
-    if ($num == $('.slider ul li').length) {
-        $num == 0
+
+
+
+
+
+
+
+// 精选产品的tab切换
+$('.good-produce-title span').eq(0).attr('class', 'good-produce-title-border')
+$('.good-produce-content').eq(0).show()
+
+$('.good-produce-title').on('click', function () {
+    // $('.good-produce-title h2').css({
+    //     'color': '#1b69d4',
+    // })
+    // $('.good-produce-title span').css({
+    //     'color': '#76a5e5',
+    // })
+    // $('.good-produce-title span').attr('class', 'good-produce-title-border').siblings('.good-produce-title span').removeAttr('class')
+    $(this).children('span').addClass('good-produce-title-border').parent().siblings().children('span').removeClass('good-produce-title-border')
+
+    $('.good-produce-content').hide()
+    let index = $(this).index()
+    // console.log(index)
+    $('.good-produce-content').eq(index).show()
+})
+
+
+
+
+
+
+// 侧边栏
+$(document).on('scroll', function () {
+    let scrollTop = $(document).scrollTop()
+    if (scrollTop >= 200) {
+        $('.subnav').show()
+    } else {
+        $('.subnav').hide()
     }
-    t = setTimeout("switchImgs()", 1000);
-}
+})

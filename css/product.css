@@ -1,0 +1,345 @@
+.topnav{
+    width: 100%;
+    height: 92px;
+    /* position: fixed !important;
+    top: 0; */
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.topnav-one-part{
+    width: 660px;
+    /* display: inline-block; */
+}
+
+.topnav-one-part a{
+    font-size: 20px;
+    color: #181c2f;
+    font-weight: 600;
+    line-height: 60px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei;
+    padding-right: 40px;
+}
+
+.topnav-two-part a{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #91929b;
+    margin-right: 30px;
+}
+
+.topnav-two-part a:first-child{
+    color: #262626;
+}
+
+.topnav-two-part{
+    float: left;
+}
+
+.topnav-two-part-right{
+    overflow: hidden;
+    position: relative;
+    width: 653px;
+    height: 90px;
+    margin-top: -57px;
+    padding-top: 15px
+}
+
+.topnav-two-part-right input{
+    margin-left: 250px;
+    border: none;
+    border-bottom: 1px solid #181c2f;
+    padding-left: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-top: 26px;
+    width: 171px;
+    height: 60px;
+}
+
+.topnav-two-part-right input::-webkit-input-placeholder { 
+       color: #c0c4cc;   
+       font-size: 14px; 
+       text-align: left;
+       line-height: 20px;
+   }
+
+.topnav-two-part-right .big{
+    position: absolute;
+    top: 48px;
+    left: 255px;
+    font-size: 20px;
+}
+
+.people,
+.cart{
+    font-size: 26px;
+    margin-left: 35px;
+}
+
+ .topnav img{
+    width: 5%;
+    position: absolute;
+    top: -6px;
+    right: 350px;
+}
+
+
+/* 售后分类 */
+.after-service{
+    height: 53px;
+    width: 1200px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 360px;
+}
+
+.after-service span{
+    color: #303133;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 53px;
+   /* padding-right: 10px; */
+}
+
+.after-service span:last-child{
+    color: #737579;
+    font-weight: 500;
+}
+
+.after-service i{
+    font-size: 16px;
+    color: #cfd5e2;
+    font-weight: 200;
+}
+
+
+
+/* 主要内容 */
+.big-content{
+    margin-top: 20px;
+    height: 495px;
+}
+
+.big-content-left{
+    width: 500px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.big-content-left img{
+width: 75%;
+}
+
+.big-content-left ul{
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.big-content-left li img{
+    float: left;
+    width: 69px;
+    margin-right: 12px;
+}
+
+.big-content-right{
+    float: left;
+    margin-left: -27px
+}
+
+.big-content-right h1{
+    font-size: 28px;
+    padding: 0 0 10px;
+}
+
+.big-content-right .price{
+    margin-right: 10px;
+    color: #1c69d4;
+    font-size: 24px;
+}
+
+.collect{
+    margin-left: 605px;
+}
+
+.big-content-right p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.big-content-right b{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    font-weight: 500;
+}
+
+.hour{
+    color: #8c8c8c;
+}
+
+.big-content-right s{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.conut{
+    width: 90px;
+    position: relative;
+    left: 50%;
+    top: 51%;
+    margin-left: -278px;
+    margin-top: -25px;
+    height: 84px;
+}
+
+.jian{
+    /* float: left; */
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    position: absolute;
+    top: 9px;
+    left: 3px;
+}
+
+.input{
+    width: 90px;
+    float: left;
+    height: 28px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.jia{
+    float: left;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    position: absolute;
+    top: 9px;
+    right: 3px;
+}
+
+
+/* 立即购买 */
+.buy{
+    width: 177px;
+    height: 48px;
+    background-color: #1c69d4;
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.add{
+    width: 177px;
+    height: 48px;
+    background-color: #4d4d4d;
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+}
+
+
+
+/* 产品信息 */
+.produce-title{
+    width: 1200px;
+    height: 40px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+} 
+
+.produce-title span{
+    font-size: 14px;
+    line-height: 45px;
+    padding: 10px 76px;
+}
+
+.border-blue{
+    border-bottom: 2px solid #1c69d3;
+}
+
+.product-content{
+    display: none;
+}
+
+.product-content p{
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+
+
+/* 为您推荐 */
+.tuijian{
+    margin-top: 20px;
+}
+
+.tuijian h2{
+    font-size: 24px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.good-produce-content ul{
+    overflow: hidden;
+}
+
+.good-produce-content li{
+    width: 293px;
+    height: 394px;
+    float: left;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.good-produce-content li:hover{
+    transform: scale(1.06);
+    box-shadow: 8px 6px 31px -19px #ccc;
+}
+
+.good-produce-content img{
+    width: 100%;
+}
+
+.good-produce-content p{
+    font-size: 18px;
+    color: #000;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 53px;
+}
+
+.good-produce-content span{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #1c69d4;
+    margin-top: 10px;
+    display: block;
+}
+
+.content1{
+    width: 293px;
+    height: 101px;
+    margin-top: 10px;
+}
