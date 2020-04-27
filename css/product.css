@@ -142,8 +142,15 @@ width: 75%;
 
 .big-content-left li img{
     float: left;
-    width: 69px;
+    width: 64px;
     margin-right: 12px;
+}
+
+.big-content-left li{
+    height: 64px;
+    width: 64px;
+    float: left;
+    margin-right: 5px;
 }
 
 .big-content-right{
@@ -265,6 +272,7 @@ width: 75%;
     height: 40px;
     border-bottom: 2px solid #ccc;
     margin-bottom: 20px;
+    background-color: #fff;
 } 
 
 .produce-title span{
@@ -285,6 +293,13 @@ width: 75%;
     font-weight: 600;
     font-size: 16px;
     padding-left: 20px;
+}
+
+.product-content span{
+    margin-top: 30px;
+    display: block;
+    padding-left: 37px;
+    margin-bottom: 100px;
 }
 
 
@@ -343,3 +358,73 @@ width: 75%;
     height: 101px;
     margin-top: 10px;
 }
+
+
+/* 侧边栏 */
+.subnav{
+    position: fixed;
+    width: 35px;
+    height: 200px;
+    bottom: 40px;
+    right: 10px;
+    background-color: #7f7f7f;
+    border-radius: 8px;
+    z-index: 8;
+    display: none;
+}
+
+.subnav i{
+    font-size: 25px;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* 底部 */
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #8e8e8e;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer p{
+    float: left;
+    line-height: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer i{
+    position: absolute;
+    top: 29px;
+    left: 328px;
+    background-image: url(../images/last_1.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 21px;
+    padding-left: 12px;
+    display: block;
+  }
+
+  .footer-right span{
+      margin-left: 38px;
+      float: left;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 37px;
+      border-bottom: 1px solid #fff;
+  }
+
+  .footer-right span:first-child{
+      margin-left: 372px;
+  }
+
+  .footer .BMW{
+      border: none;
+  }

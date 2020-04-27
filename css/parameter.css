@@ -1,0 +1,357 @@
+.top-nav{
+    /* position: absolute; */
+    top: 5px;
+    /* left: 50px; */
+    width: 100%;
+    height: 99px;
+    overflow: hidden;
+    /* margin-left: 297px; */
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    /* transition: opacity 1s; */
+    border: 1px solid #ccc;
+}
+
+/* .opacity{
+  background:rgb(0,0,0,0)
+} */
+
+.top-nav .top-nav-left a{
+  float: left;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 54px;
+  line-height: 56px;
+  color: #8e8f91;
+}
+
+.top-nav i{
+    color: #8e8f91;
+}
+
+.top-nav .big i{
+  /* position: absolute;
+    top: 20px;
+    right: 255px; */
+    font-size: 20px;
+    width: 60px;
+    height: 75px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    margin-left: 460px;
+}
+
+.top-nav .people i{
+  /* position: absolute;
+  top: 18px;
+    right: 202px; */
+  font-size: 24px;
+  width: 60px;
+  height: 75px;
+  line-height: 100px;
+  text-align: center;
+  float: left;
+}
+
+.top-nav .gps i{
+  /* position: absolute;
+    top: 20px;
+    right: 150px; */
+    font-size: 24px;
+    width: 60px;
+    height: 75px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+}
+
+.top-nav div a{
+    color: #fff;
+}
+
+.topnav-right{
+    position: relative;
+}
+
+.BMW{
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    background-image: url(../images/top-nav_2.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 75px;
+    background-position: center center;
+    background-size: 90px;
+    z-index: 1;
+}
+
+.border-bottom{
+  position: absolute;
+    top: 98px;
+    left: 2px;
+    width: 1080px;
+    height: 4px;
+    background-color: #ccc;
+}
+
+
+
+/* 配置表 */
+.configuration-table{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+.configuration-table a{
+    line-height: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+
+.configuration-table a::before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color: #ebebeb;
+    position: absolute;
+    top: 18px;
+    left: 513px;
+}
+
+.configuration-table a:first-child{
+    margin-right: 40px;
+    color: #262626;;
+}
+
+.configuration-table a:nth-child(4){
+    color: #363636;
+    border-bottom: 4px solid #1c69d4;
+    padding-bottom: 29px;
+}
+
+.driver{
+    width: 235px;
+    height: 47px;
+    background-color: #1c69d4;
+    float: right;
+    margin-top: 19px;
+}
+
+.driver span{
+    color: #fff;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 600;
+    display: block;
+}
+
+
+
+/* 参数与配置 */
+.parameter{
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.parameter h1{
+    font-size: 35px;
+    padding-left: 7px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.parameter-two{
+    float: left;
+    height: 48px;
+    padding: 0 60px 0 15px;
+    line-height: 28px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    border-bottom: 2px solid #e6e6e6;
+    width: 1200px;
+    line-height: 47px;
+    position: relative;
+}
+
+.parameter-two a{
+    margin-right: 75px;
+}
+
+.parameter-two a:last-child{
+    float: right;
+    text-decoration: underline;
+    line-height: 45px;
+}
+
+.parameter-two a:nth-child(1)::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 2px;
+}
+
+.parameter-two a:nth-child(2)::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 128px;
+}
+
+.parameter-two a:nth-child(3)::before{
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 22px;
+    left: 260px;
+}
+
+.wheelbase{
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 60px;
+}
+
+.wheelbase span{
+    float: left;
+    line-height: 72px;
+    margin-right: 40px;
+}
+
+.long{
+    float: left;
+    background-color: #1c69d4;
+    width: 150px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.biaozhun{
+    float: left;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 32px;
+    color: #333;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+/* 选择框 */
+.choose{
+    height: 94px;
+    position: relative;
+    width: 255px;
+    float: left;
+    margin-top: 30px;
+}
+
+.choose-left-one{
+    margin-top: 5px;
+}
+
+.choose-left-one span{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.choose-left-one::before{
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.choose-left-one #input1{
+    opacity: 0;
+}
+
+.choose-left-two{
+    margin-top: 24px;
+}
+
+.choose-left-two span{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.choose-left-two::before{
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+}
+
+.choose-left-two #input2{
+    opacity: 0;
+}
+
+/* 选择框的右边 */
+/* .choose-content{
+    float: left;
+} */
+
+.arrow-left{
+    width: 30px;
+    height: 60px;
+    background-color: #cdcdcd;
+    margin-top: 30px;
+    float: left;
+}
+
+.arrow-left i{
+    line-height: 60px;
+    margin-left: 8px;
+}
+
+.arrow-right{
+    width: 30px;
+    height: 60px;
+    background-color: #cdcdcd;
+    margin-top: 30px;
+    float: right;
+    /* margin-left: 885px */
+}
+
+.arrow-right i{
+    line-height: 60px;
+    margin-left: 8px;
+}
+
+.big-choose{
+    border-bottom: 1px solid #ccc;
+    height: 110px;
+}
