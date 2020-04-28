@@ -164,6 +164,7 @@
 .parameter{
     margin-top: 60px;
     overflow: hidden;
+    height: 350px;
 }
 
 .parameter h1{
@@ -320,15 +321,19 @@
 }
 
 /* 选择框的右边 */
-/* .choose-content{
-    float: left;
-} */
+.choose-content{
+  position: relative;
+  height: 109px;
+    margin-left: 255px;
+    width: 945px;
+    overflow: hidden;
+}
 
 .arrow-left{
     width: 30px;
     height: 60px;
     background-color: #cdcdcd;
-    margin-top: 30px;
+    margin-top: -180px;
     float: left;
 }
 
@@ -340,8 +345,8 @@
 .arrow-right{
     width: 30px;
     height: 60px;
-    background-color: #cdcdcd;
-    margin-top: 30px;
+    background-color: #666666;
+    margin-top: -180px;
     float: right;
     /* margin-left: 885px */
 }
@@ -354,4 +359,171 @@
 .big-choose{
     border-bottom: 1px solid #ccc;
     height: 110px;
+}
+
+#selid{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 283px;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+select {   
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/  
+    border: solid 1px #d9d9d9;   
+    /*很关键：将默认的select选择框样式清除*/  
+    appearance:none;   
+    -moz-appearance:none;   
+    -webkit-appearance:none;   
+    /*在选择框的最右侧中间显示小箭头图片*/  
+    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll rightright center transparent;   
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/  
+    padding-right: 14px;   
+  }   
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/  
+  select::-ms-expand { display: none; }  
+
+  .arrow-white1{
+    position: absolute;
+    top: 26px;
+    left: 284px;
+    width: 35px;
+    height: 35px;
+    background-color: #1c69d4;
+  }
+
+  .arrow-white1 i{
+      color: #fff;
+      line-height: 35px;
+    margin-left: 10px;
+  }
+
+  .arrow-white2{
+    position: absolute;
+    top: 26px;
+    left: 579px;
+    width: 35px;
+    height: 35px;
+    background-color: #1c69d4;
+  }
+
+  .arrow-white2 i{
+      color: #fff;
+      line-height: 35px;
+    margin-left: 10px;
+  }
+
+  .arrow-white3{
+    position: absolute;
+    top: 26px;
+    left: 875px;
+    width: 35px;
+    height: 35px;
+    background-color: #1c69d4;
+  }
+
+  .arrow-white3 i{
+      color: #fff;
+      line-height: 35px;
+    margin-left: 10px;
+  }
+
+
+  .choose-content ul{
+      float: left;
+      overflow: hidden;
+      width: calc(300px*6);
+      margin-left: 27px;
+  }
+
+  .choose-content li{
+      float: left;
+      width: 295px;
+  }
+
+  .choose-content li:nth-child(3){
+      margin-right: 50px;
+  }
+
+  .choose-content li a{
+      margin-left: 20px;
+      text-decoration: underline;
+  }
+
+  .price{
+      height: 44px;
+  }
+
+  .price b{
+    font-size: 14px;
+    margin-left: -220px;
+    line-height: 44px;
+  }
+
+  .price span{
+      margin-left: 200px;
+      font-size: 14px;
+  }
+
+  .information-one,
+  .information-two,
+  .information-three,
+  .information-four,
+  .information-five,
+  .information-six,
+  .information-seven,
+  .information-eight,
+  .information-nine,
+  .information-ten,
+  .information-eleven{
+      border-bottom: 1px solid #ccc;
+      height: 72px;
+      line-height: 72px;
+      font-size: 20px;
+      padding-left: 50px;
+      font-weight: 200;
+  }
+
+  .information-one h3,
+  .information-two h3,
+  .information-three h3,
+  .information-four h3,
+  .information-five h3,
+  .information-six h3,
+  .information-seven h3,
+  .information-eight h3,
+  .information-nine h3,
+  .information-ten h3,
+  .information-eleven h3{
+      font-weight: 500;
+  }
+
+  .information caption{
+     height: 52px;
+     width: 90px;
+     font-size: 18px;
+     padding-left: 50px;
+     line-height: 52px;
+  }
+
+  .information tr{
+      border-bottom: 1px solid #ccc;
+  }
+
+  .information td{
+    /* margin-right: 40px; */
+    width: 290px;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+}
+
+.information td:first-child{
+    /* margin-right: 40px; */
+    width: 290px;
+    text-align: left;
 }
