@@ -14,3 +14,12 @@ $(document).on('scroll', function () {
     }
 })
 
+
+
+
+
+// 点击基本数据的+号  table隐藏
+$('.information-add').on('click', function () {
+    let index = $(this).index()
+    $('.information table').eq(index).hide()
+})

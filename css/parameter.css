@@ -468,6 +468,11 @@ select {
       font-size: 14px;
   }
 
+
+  .information{
+      position: relative;
+  }
+
   .information-one,
   .information-two,
   .information-three,
@@ -501,17 +506,19 @@ select {
       font-weight: 500;
   }
 
-  .information caption{
-     height: 52px;
-     width: 90px;
+  .information ul li{
+     height: 72px;
+     width: 1200px;
      font-size: 18px;
      padding-left: 50px;
-     line-height: 52px;
+     line-height: 72px;
+     border-bottom: 1px solid #ccc;
+     box-sizing: border-box;
   }
 
-  .information tr{
-      border-bottom: 1px solid #ccc;
-  }
+  /* .information tr{
+      
+  } */
 
   .information td{
     /* margin-right: 40px; */
@@ -520,10 +527,265 @@ select {
     height: 52px;
     line-height: 52px;
     font-size: 14px;
+    border-bottom: 1px solid #ccc;
 }
 
 .information td:first-child{
     /* margin-right: 40px; */
-    width: 290px;
+    width: 328px;
     text-align: left;
 }
+
+.information-add1{
+    width: 40px;
+    height: 40px;
+    background-color: #1c69d4;
+    position: absolute;
+    top: 5px;
+    left: 351px;
+}
+
+.information-add1 i{
+    color: #fff;
+    line-height: 40px;
+    margin-left: 12px;
+    font-size: 26px;
+}
+
+.information-add2{
+    width: 40px;
+    height: 40px;
+    background-color: #1c69d4;
+    position: absolute;
+    top: 668px;
+    left: 351px;
+}
+
+.information-add2 i{
+    color: #fff;
+    line-height: 40px;
+    margin-left: 12px;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.beizhu{
+    margin-top: 20px;
+}
+
+.beizhu-one h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.beizhu-one b{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.beizhu-one p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.beizhu-two b{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.beizhu-two p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 第八部分 */
+.eight-part{
+    padding-bottom: 120px;
+    margin-top: 30px;
+  }
+  .eight-part-one{
+    width: 230px;
+    height: 155px;
+    background-color: #f2f2f2;
+      /* display: inline-block; */
+      margin-right: 10px;
+      position: relative;
+      float: left;
+  }
+  
+  .eight-part-one .iconfont{
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    right: 45%;
+  }
+  
+  .eight-part-one p{
+    font-size: 16px;
+    color: #9b9b9b;
+    margin-top: 90px;
+    margin-left: 70px;
+  }
+  
+  .eight-part-one .yu{
+    margin-left: 82px;
+  }
+  
+  
+  
+  
+  /* 底部 */
+  .footer{
+    width: 100%;
+    height: 415px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-top: 150px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .footer dl{
+    float: left;
+    margin-right: 120px;
+  }
+  
+  .footer .footer-one{
+    padding-left: 24px;
+  }
+  
+  .footer dt{
+    font-size: 18px;
+      color: #333;
+      margin-bottom: 28px;
+  }
+  
+  .footer dd{
+    font-size: 14px;
+    line-height: 28px;
+    color: #999999;
+    font-weight: 700;
+  }
+  
+  .footer dd:hover{
+    color: #2b2b2b;
+  }
+  
+  .footer .xian{
+    position: absolute;
+      bottom: 307px;
+      left: 332px;
+      width: 1200px;
+      height: 1px;
+      background-color: #bbbbbb;
+  }
+  
+  
+  
+  /* 许可证 */
+  .last{
+    width: 100%;
+    height: 87px;
+    overflow: hidden;
+  }
+  
+  .last p{
+    float: left;
+    float: left;
+      font-size: 16px;
+      line-height: 70px;
+      padding-left: 24px;
+  }
+  
+  .last-right{
+    float: right;
+      font-size: 14px;
+      position: relative;
+  }
+  
+  .last-right span{
+    margin-right: 19px;
+    line-height: 70px;
+    padding: 3px;
+  }
+  
+  .last-right i{
+    position: absolute;
+      top: 25px;
+      right: 200px;
+      background-image: url(../images/last_1.png);
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 21px;
+      padding-left: 12px;
+      display: block;
+  }
+  
+  .last .us{
+    color: #1567d7;
+  }
+  
+  .last .us:hover{
+    color: #333;
+    font-weight: 900;
+  }
+  
+  .last-right .jing:hover{
+    font-weight: 700;
+  }

@@ -1,0 +1,377 @@
+.top-nav{
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    height: 99px;
+    overflow: hidden;
+    margin-left: 297px;
+   z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* background: #fff; */
+    transition: opacity 1s;
+    /* background:rgba(0,0,0,.5) */
+}
+
+.opacity{
+  background:rgb(0,0,0,0)
+}
+
+.top-nav .top-nav-left a{
+  float: left;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 54px;
+  line-height: 56px;
+}
+
+.top-nav i{
+    color: #fff;
+}
+
+.top-nav .big i{
+  position: absolute;
+    top: 20px;
+    right: 233px;
+    font-size: 20px;
+    width: 60px;
+    height: 75px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.top-nav .people i{
+  position: absolute;
+  top: 18px;
+    right: 178px;
+  font-size: 24px;
+  width: 60px;
+  height: 75px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.top-nav .gps i{
+  position: absolute;
+    top: 20px;
+    right: 120px;
+    font-size: 24px;
+    width: 60px;
+    height: 75px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.top-nav div a{
+    color: #fff;
+}
+
+.topnav-right{
+    position: relative;
+}
+
+.BMW{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    background-image: url(../images/top-nav_1.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 75px;
+    background-position: center center;
+    background-size: 90px;
+    z-index: 1;
+}
+
+.border-bottom{
+  position: absolute;
+    top: 98px;
+    left: 2px;
+    width: 1080px;
+    height: 4px;
+    background-color: #ccc;
+}
+
+/* 顶部导航  a添加的类名 */
+.border-blue{
+    border-bottom: 4px solid #1c69d4;
+  }
+
+
+
+
+/* C位大图 */
+.c-big{
+    position: relative;
+}
+
+.c-big img{
+    margin-left: 110px;
+}
+
+.new .blue{
+    background-color: #1c69d4;
+    color: #fff;
+    font-size: 14px;
+    padding: 16px 107px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 85px;
+  }
+
+  .c-big .new{
+    position: absolute;
+    top: 24%;
+    left: 130px;
+}
+
+.new h2{
+    font-size: 46px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 13px;
+    margin-left: 85px;
+}
+
+.new p{
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #fff;
+    margin-left: 85px;
+}
+
+
+
+/* 配置表 */
+.configuration-table{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+.configuration-table a{
+    line-height: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    color: #8e8e8e;
+    font-weight: 600;
+    padding-bottom: 29px;
+}
+
+.configuration-table span::before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color: #ebebeb;
+    position: absolute;
+    top: 18px;
+    left: 468px;
+}
+
+.configuration-table span{
+    margin-right: 40px;
+    color: #262626;;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* .configuration-table a:nth-child(4){
+    color: #363636;
+    border-bottom: 4px solid #1c69d4;
+    padding-bottom: 29px;
+} */
+
+.driver{
+    width: 325px;
+    height: 47px;
+    background-color: #1c69d4;
+    float: right;
+    margin-top: 19px;
+}
+
+.driver span{
+    color: #fff;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+}
+
+
+
+
+/* 精髓缔造 */
+.BMW-create{
+    margin-top: 60px;
+}
+
+.BMW-create-one h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.BMW-create-one p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.BMW-create-one-content ul{
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+.BMW-create-one-content li{
+    float: left;
+    width: 285px;
+    height: 500px;
+    position: relative;
+   overflow: hidden;
+}
+
+.BMW-create-one-content li:nth-child(1) img{
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100% !important;
+    left: 0%;
+    top: 0%;
+    transform-origin: center center;
+    /* transition: all 0.5s ease 0s; */
+    /* width: 285px; */
+    margin-left: -136px;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
+.BMW-create-one-content li:nth-child(2) img{
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100% !important;
+    left: 0%;
+    top: 0%;
+    transform-origin: center center;
+    /* transition: all 0.5s ease 0s; */
+    /* width: 285px; */
+    margin-left: -33px;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
+.BMW-create-one-content li:nth-child(3) img{
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100% !important;
+    left: 0%;
+    top: 0%;
+    transform-origin: center center;
+    /* transition: all 0.5s ease 0s; */
+    /* width: 285px; */
+    margin-left: -140px;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
+.BMW-create-one-content li:nth-child(4) img{
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100% !important;
+    left: 0%;
+    top: 0%;
+    transform-origin: center center;
+    /* transition: all 0.5s ease 0s; */
+    /* width: 285px; */
+    margin-left: -220px;
+    transform: scale(1.1);
+}
+
+
+.BMW-create-one-content li img:hover{
+    /* -webkit-transform: scale(1.5); */
+    transform: scale(1);
+  }
+
+.BMW-create-one-content li:nth-child(-n+3){
+    margin-right: 15px;
+}
+
+.bottom-white1{
+    position: absolute;
+    top: 350px;
+    left: 25px;
+}
+
+.bottom-white1 h2{
+    font-size: 96px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: -8px;
+}
+
+.bottom-white1 p{
+    color: #fff;
+}
+
+.BMW-create-two{
+    width: 570px;
+    height: 416px;
+    border-left: 2px solid #bbbbbb;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-left: 373px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.border-left{
+    position: absolute;
+    top: 32px;
+    left: -16px;
+    width: 14px;
+    height: 50px;
+    background-color: #bbbbbb;
+}
+
+.BMW-create-two h3{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.BMW-create-two p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px
+}
+
+.BMW-create-three {
+    margin-top: 220px;
+    position: relative;
+}
+
+.BMW-create-three-title{
+    width: 435px;
+}
+
+.BMW-create-three h3{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.BMW-create-three p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
