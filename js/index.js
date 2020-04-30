@@ -217,9 +217,7 @@ $('.ah-tab-item').click(function () {
     // alert('123')
     $(this).addClass('bottom-blue').siblings().removeClass('bottom-blue')
     //页面滑动
-    $('.ah-tab-content-wrapper').animate({
-        left: -$(this).index() * 1200
-    }, 500)
+    cuo
 })
 //点击活动悦享的左右箭头 页面滑动
 $('.activity-arrow-left i').click(function () {

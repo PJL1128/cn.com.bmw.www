@@ -37,3 +37,49 @@ $('.configuration-table a').on('mouseenter', function () {
 $('.configuration-table a').mouseleave(function () {
     $(this).removeClass('border-blue')
 })
+
+
+
+
+
+
+// 套装与配置
+var num = 0
+
+$('.taozhuang-name-arrow-right').on('click', function () {
+    num++
+    // console.log('123')
+    if (num == 2) {
+        // alert(0)
+        $('.taozhuang-name').css({
+            width: '590px'
+        })
+        $('.taozhuang-name ul').animate({
+            left: -num * $('.taozhuang-name ul li').eq(2) * 590
+        }, 500)
+    }
+    // if (num == 5) {
+    //     $('.taozhuang-name').css({
+    //         width: '593px'
+    //     })
+    //     $('.taozhuang-name ul').animate({
+    //         left: -num * 593
+    //     }, 500)
+    // }
+    $('.taozhuang-name ul').animate({
+        left: -num * 455
+    }, 500)
+
+})
+
+
+$('.taozhuang-name-arrow-left').on('click', function () {
+    if (num < 0) {
+        num = $('.taozhuang-name ul li').length
+    }
+    num--
+    // console.log('123')
+    $('.taozhuang-name ul').animate({
+        left: -num * 515
+    }, 500)
+})
