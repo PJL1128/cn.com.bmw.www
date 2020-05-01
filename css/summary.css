@@ -896,7 +896,7 @@
 }
 
 .taozhuang-name{
-    width: 510px;
+    width: 635px;
     overflow: hidden;
     height: 40px;
     position: relative;
@@ -906,7 +906,7 @@
 
 .taozhuang-name ul{
     overflow: hidden;
-    width: 4550px;
+    width: 10000px;
     position: relative;
     padding-left: 16px;
     position: absolute;
@@ -916,8 +916,9 @@
     font-size: 35px;
     /* margin-left: 30px; */
     float: left;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     /* padding-left: 30px; */
+    width:635px
 }
 
 .arrow-left{
@@ -954,4 +955,24 @@
     font-weight: 900;
     color: #666;
    
+}
+
+.look{
+    width: 1200px;
+    height: 475px;
+    position: relative;
+}
+
+.taozhaung-name-content{
+    width: 4300px;
+    overflow: hidden;
+}
+
+.taozhaung-img{
+    float: left;
+    /* display: inline; */
+}
+
+.taozhaung-img img{
+    width: 100%;
 }

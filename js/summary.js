@@ -49,15 +49,15 @@ var num = 0
 $('.taozhuang-name-arrow-right').on('click', function () {
     num++
     // console.log('123')
-    if (num == 2) {
-        // alert(0)
-        $('.taozhuang-name').css({
-            width: '590px'
-        })
-        $('.taozhuang-name ul').animate({
-            left: -num * $('.taozhuang-name ul li').eq(2) * 590
-        }, 500)
-    }
+    // if (num == 2) {
+    //     // alert(0)
+    //     $('.taozhuang-name').css({
+    //         width: '590px'
+    //     })
+    //     $('.taozhuang-name ul').animate({
+    //         left: -num * $('.taozhuang-name ul li').eq(2) * 590
+    //     }, 500)
+    // }
     // if (num == 5) {
     //     $('.taozhuang-name').css({
     //         width: '593px'
@@ -67,7 +67,7 @@ $('.taozhuang-name-arrow-right').on('click', function () {
     //     }, 500)
     // }
     $('.taozhuang-name ul').animate({
-        left: -num * 455
+        left: -num * 635
     }, 500)
 
 })
