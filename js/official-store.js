@@ -1,7 +1,5 @@
 // 轮播图
-// 轮播图
-// - 功能1：显示小圆点，第一个小圆点是有current这个类名的
-
+// 显示小圆点
 // 定义变量
 var $num = 0
 //遍历图片 
@@ -12,8 +10,9 @@ for (let i = 0; i < $('.slider ul li').children().length; i++) {
     $('.slider ol li').eq(0).addClass('current')
 }
 
-// 鼠标经过哪个小圆点上面，这个小圆点的背景色就是蓝色(current类名已经提供)，同时大图也在跟着切换
-$('.slider ol li').on('click', function () {
+// 鼠标经过哪个小圆点上面，小圆点的背景色就是蓝色
+$('.slider ol li').on('mouseenter', function () {
+    // alert('123')
     //添加类名current
     $(this).addClass('current')
     //删除其他的兄弟元素的current
@@ -25,13 +24,18 @@ $('.slider ol li').on('click', function () {
     $('.slider ul li').eq(index).stop().fadeIn().siblings().stop().fadeOut()
 })
 
-// 自动轮播的效果
-// var timer = setInterval(function () {
-//     $('.slider ol li').click()
-// }, 2000)
 
 
-//默认动画,图片轮播,每个1秒切换
+
+
+// 热销产品
+var num = 0
+$('.arrow-right').on('click', function () {
+    num++
+    $('.look ul').animate({
+        left: -num * 232
+    })
+})
 
 
 

@@ -45,41 +45,33 @@ $('.configuration-table a').mouseleave(function () {
 
 // 套装与配置
 var num = 0
-
+let index = $('.taozhuang-name ul li').index()
+console.log(index)
 $('.taozhuang-name-arrow-right').on('click', function () {
     num++
-    // console.log('123')
-    // if (num == 2) {
-    //     // alert(0)
-    //     $('.taozhuang-name').css({
-    //         width: '590px'
-    //     })
-    //     $('.taozhuang-name ul').animate({
-    //         left: -num * $('.taozhuang-name ul li').eq(2) * 590
-    //     }, 500)
-    // }
-    // if (num == 5) {
-    //     $('.taozhuang-name').css({
-    //         width: '593px'
-    //     })
-    //     $('.taozhuang-name ul').animate({
-    //         left: -num * 593
-    //     }, 500)
-    // }
+    if ($('.taozhuang-name ul li').eq(2)) {
+        $('.taozhuang-name-arrow-right').css({
+            'width': 630
+        })
+    }
     $('.taozhuang-name ul').animate({
         left: -num * 635
     }, 500)
+
+    // 图片切换
+    $('.taozhaung-img').eq(index).fadeIn().stop().siblings().fadeOut()
 
 })
 
 
 $('.taozhuang-name-arrow-left').on('click', function () {
-    if (num < 0) {
-        num = $('.taozhuang-name ul li').length
-    }
     num--
+    // if (num < 0) {
+    //     num = $('.taozhuang-name ul li').length
+    // }
+    // num--
     // console.log('123')
     $('.taozhuang-name ul').animate({
-        left: -num * 515
+        left: -num * 635
     }, 500)
 })
