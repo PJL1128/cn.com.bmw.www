@@ -77,3 +77,108 @@ $(document).on('scroll', function () {
         $('.subnav').hide()
     }
 })
+
+
+
+
+let bannerBg = ['./images/xxxxxxxxxx01.png', './images/xxxxxxxxx02.png', './images/xxxxxx03.png', './images/xxxxxxx04.png',
+    './images/xxxxx05.png', './images/xxxxxxxx06.png', './images/xxxxxxxxxx07.png', './images/xxxxxxxxx08.png', './images/xxxxxxxxxx09.png', './images/xxxxxxx10.png.png"',
+    './images/xxxxxxxxxxx11.png', './images/xxxxxx12.png', './images/xxxxxxxx13.png', './images/xxxxxxxxxxxxx14.png', './images/xxxxxx15.png', './images/xxx16.png', './images/xxxxxx17.png',
+    './images/xxxxx18.png', './images/xxxx.19.png']
+
+let top1 = ['全新BMW 3系', 'BMW 4系双门轿跑车2019款', '新BMW X1插电式混合动力', '创新BMW X2', '新BMW X5', '新 BMW X1', 'BMW 6系GT2019款',
+    'BMW 4系敞篷轿跑车', '全新BMW X6', 'BMW 2系敞篷轿跑车2019款', 'BMW 2系双门轿跑车2019款', 'BMW 2系多功能旅行车', '创新BMW X4 M',
+    '全新BMW 8系双门轿跑车', '全新BMW M5雷霆版', '全新BMW X5插电式混合动力', '新BMW7系', 'BMW X3', '新BMW X4']
+
+let price = ['车型指导价 ￥313,900起', '车型指导价 ￥266,800起', '车型指导价 ￥359,800起', '车型指导价 ￥399,800起', '车型指导价 ￥359,800起',
+    '车型指导价 ￥399,800起', '车型指导价 ￥699,900起', '车型指导价 ￥278,800起', '车型指导价 ￥753,900起', '车型指导价 ￥583,900起', '车型指导价 ￥516,800起',
+    '车型指导价 ￥309,800起', '车型指导价 ￥849,900起', '车型指导价 ￥263,800起', '车型指导价 ￥263,800起', '车型指导价 ￥869,900起', '车型指导价 ￥1098,000起',
+    '车型指导价 ￥1468,900起', '车型指导价 ￥423,900起']
+
+let bannerIndex = 0
+$('.banner-right').click(function () {
+    bannerIndex++
+    if (bannerIndex == $('.banner-b div').length) {
+        bannerIndex = 0
+        $('.banner-b').animate({
+            left: 260
+        })
+    }
+    $('.banner-b').animate({
+        left: -bannerIndex * 260
+    })
+
+    $('.banner-top-tex h4').html(top1[bannerIndex])
+    $('.banner-top-tex .cx').html(price[bannerIndex])
+
+    $('.banner-b div').eq(bannerIndex).css({
+        'margin-top': '0px'
+    }).children('img').css({
+        'width': '490px',
+        'filter': 'none'
+    }).parent().siblings().css({
+        'margin-top': '80px'
+    }).children('img').css({
+        'width': '224px',
+        'filter': 'blur(2px)'
+    })
+    // console.log(bannerIndex);
+
+    $('.banner-top').css({
+        'background-image': `url(${bannerBg[bannerIndex]})`
+    })
+})
+
+
+
+
+
+
+
+
+
+
+$('.banner-left').click(function () {
+    bannerIndex--
+    if (bannerIndex < 0) {
+        bannerIndex = $('.banner-b div').length
+        $('.banner-b').animate({
+            left: -4940
+        })
+        $('.banner-b div').eq(bannerIndex).css({
+            'margin-top': '0px'
+        }).children('img').css({
+            'width': '490px',
+            'filter': 'none'
+        }).parent().siblings().css({
+            'margin-top': '80px'
+        }).children('img').css({
+            'width': '224px',
+            'filter': 'blur(2px)'
+        })
+        $('.banner-top').css({
+            'background-image': `url(${bannerBg[bannerIndex]})`
+        })
+    }
+
+    $('.banner-top-tex h4').html(top1[bannerIndex])
+    $('.banner-top-tex .cx').html(price[bannerIndex])
+
+    $('.banner-b').animate({
+        left: -bannerIndex * 260
+    })
+    $('.banner-b div').eq(bannerIndex).css({
+        'margin-top': '0px'
+    }).children('img').css({
+        'width': '490px',
+        'filter': 'none'
+    }).parent().siblings().css({
+        'margin-top': '80px'
+    }).children('img').css({
+        'width': '224px',
+        'filter': 'blur(2px)'
+    })
+    $('.banner-top').css({
+        'background-image': `url(${bannerBg[bannerIndex]})`
+    })
+})

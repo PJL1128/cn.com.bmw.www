@@ -998,14 +998,47 @@
 
 /* 精彩视频 */
 .vedieo{
-    height: 595px;
-    background-color: pink;
+    /* height: 595px; */
+    margin-left: 110px;
+    
 }
 
 .vedieo h2{
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 50px;
+    margin-left: 250px;
 }
+
+.video-content {
+    height: 700x;
+    /* margin-left: 114px; */
+    /* margin-left: 112px; */
+    position: relative;
+    margin-top: 92px;
+    width: 1680px;
+  }
+
+  .video-content img{
+      width: 100%;
+  }
+
+  .video-content ul{
+      height: 632px;
+      overflow: hidden;
+  }
+
+  .video-content ul li {
+    position: absolute;
+    float: left;
+    margin-right: 15px;
+    /* display: none; */
+  }
+
+  /* .video-content ul li:first-child {
+    display: block;
+  } */
+
 
 
 
